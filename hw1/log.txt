@@ -1,0 +1,48 @@
+1.
+(a)
+InsC, CycC:
+naive_power_iter: 50, 89
+naive_power_recur: 135, 218
+fast_power_iter: 27, 42
+fast_power_recur: 73, 118
+
+explanation: for the N-th power, naive algo use a total of N operations, while fast algo use an average of lg(N) ops.
+
+defs: (found on user manual)
+Self InsC: Self Instruction Count – total number of instructions per function
+Self CycC: Self Cycle Count – total number of cycles per function
+
+(b)
+CPI = CycC / InsC
+fast_power_iter: 1.56
+fast_power_recur: 1.62
+
+CPU Time = CycC / RATE (3GHz)
+fast_power_iter: 1.4E-8
+fast_power_recur: 3.93E-8
+
+(c)
+-O0
+InsC, CycC, CPI:
+fast_power_iter: 87, 191, 2.16
+fast_power_recur: 167, 267, 1.60
+
+
+-O1
+InsC, CycC:
+fast_power_iter: 27, 42, same
+fast_power_recur: 73, 118, same
+
+(d)
+simple comp.
+
+2.
+(a) to MHz!!
+
+1x 3.3 GHz | 3x 3.15 GHz | 2x 2.96 GHz | 2x 2.26 GHz
+2x 3.78 GHz | 4x 2.11 GHz
+1x 2.91 GHz | 4x 2.37 GHz | 4x 1.7 GHz
+
+(b)
+
+(c)
